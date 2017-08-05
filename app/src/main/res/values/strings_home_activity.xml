@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="new_survey">New Survey</string>
+    <string name="new_514">New 514</string>
+    <string name="new_100">New 100</string>
+    <string name="returned">Returned 514 Reports</string>
+
+</resources>

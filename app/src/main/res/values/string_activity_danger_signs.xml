@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Any_bleeding">Any bleeding from the vagina?</string>
+    <string name="Bad_headache">Bad headache</string>
+    <string name="Blurred_vision">Blurred vision?</string>
+    <string name="Consiousness">Loss of consciousness</string>
+    <string name="fever">A high fever?</string>
+    <string name="Discharge">Heavy Virginal Discharge</string>
+    <string name="abnominal">Severe abdominal pains</string>
+    <string name="urinate_alot">A lot of urination</string>
+    <string name="not_moving">Baby is not moving at all</string>
+    <string name="bleeging_alot">A lot of bleeding before and after birth</string>
+    <string name="bad_abdominal">Bad abdominal pain</string>
+    <string name="labour_pain">Labor pains for more than 12 hours</string>
+    <string name="water_break">Water breaks without labor for more than 12 hours</string>
+    <string name="arm_legs">Arm or leg of baby coming out first</string>
+    <string name="foul_smelling">Foul smelling vaginal discharge</string>
+
+</resources>

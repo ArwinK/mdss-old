@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dewcis.mdss.RecommendationView"
+    android:scrollbars="none"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView android:text="Patients name" style="@style/spinner_label" android:contentDescription=""/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/patient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/patient"
+            />
+        <TextView android:text="Patients Phone Number" style="@style/spinner_label" android:contentDescription=""/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/patient_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/patient_num"
+            />
+        <TextView android:text="Referral facility" style="@style/spinner_label" android:contentDescription=""/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/other_facility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/other_facility"
+            />
+        <TextView android:text="Message" style="@style/spinner_label" android:contentDescription=""/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/message_clinician"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message_from_health"
+            android:lines="4"
+            />
+        <RadioGroup
+            android:id="@+id/rgServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radio_postpartum"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Did not visit facility"/>
+            <RadioButton android:id="@+id/radio_pregnant"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Referred to other"/>
+        </RadioGroup>
+        <TextView android:text="Response" style="@style/spinner_label" android:contentDescription=""/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/message_response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message_back"
+            android:lines="4"
+            />
+
+        <!--<TextView android:text="Follow up status" style="@style/spinner_label" android:contentDescription=""/>-->
+        <!--<Spinner android:id="@+id/status"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/message_alert"></Spinner>-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:onClick="sendStat"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

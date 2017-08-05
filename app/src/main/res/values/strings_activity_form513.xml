@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="form_code">Individual Code</string>
+    <string name="house_member">House Member</string>
+    <string name="membernum">No. of HH Members per Age Cohort</string>
+    <string name="link_member">Relationship to HHH</string>
+    <string name="extOrphan">Orphan</string>
+    <string name="extCertificate">Birth Certificate</string>
+    <string name="extSchool">In School</string>
+    <string name="extPregnant">Pregnant</string>
+    <string name="extMotherChildHealth">Mother and Child Health Booklet</string>
+    <string name="extANC">ANC (at least 4 visits)</string>
+    <string name="extSkilledBirthAT">Delivered by Skilled Birth Attendant</string>
+    <string name="extExclusiveBreastFeeding">Exclusive Breast feeding</string>
+
+    <string name="days_28">A: 0 - 28 days</string>
+    <string name="days_To11months">B: 29 days - 11 months</string>
+    <string name="months_To59months">C: 12  - 59 months</string>
+    <string name="years_To12Years">D: 5 - 12 years</string>
+    <string name="years_To24Years">E: 13 - 24 boys</string>
+    <string name="girls_To24Girls">F: 13 - 24 girls</string>
+    <string name="years_To59Years">G: 25 - 59 years</string>
+    <string name="usingPlanningMethods">Using family planing methods</string>
+    <string name="penta1Given">Penta1 given</string>
+    <string name="measlesGiven">Measles Given</string>
+    <string name="childrenThreeGroups">Children 6-23 months received 3 or more food groups three times a day</string>
+    <string name="LLIN">LLIN use</string>
+    <string name="cough">Cough (2 weeks and above)</string>
+    <string name="disability">Disability</string>
+    <string name="penta3Given">Penta3 Given</string>
+
+    <string-array name="rel_list">
+        <item>Select</item>
+        <item>HHH</item>
+        <item>Spouse</item>
+        <item>Child (B)</item>
+        <item>Child (R)</item>
+        <item>Grand Child</item>
+        <item>Brother/Sister</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="disability_list">
+        <item>Select Option</item>
+        <item>None</item>
+        <item>Visual</item>
+        <item>Hearing</item>
+        <item>Speech</item>
+        <item>Physical</item>
+        <item>Mental</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="illness">
+        <item>Select Option</item>
+        <item>None</item>
+        <item>Diabetes</item>
+        <item>Cancer</item>
+        <item>Mental illness</item>
+        <item>Hypertension</item>
+        <item>Chronic Respiratory Diseases</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="family_planning">
+        <item>Select Option</item>
+        <item>None</item>
+        <item>Modern</item>
+        <item>Traditional/Natural</item>
+        <item>N/A</item>
+    </string-array>
+
+</resources>

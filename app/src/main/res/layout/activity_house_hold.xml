@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dewcis.mdss.HouseHoldActivity"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/linear_layout_vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblDisplayUser"
+            android:layout_marginBottom="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/visit"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="Follow up"
+            />
+
+        <LinearLayout style="@style/linear_layout_vertical" android:id="@+id/sectionNew">
+
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelMemberCount"
+            style="@style/m_expandable_panel"
+            app:animationDuration="500"
+            app:collapsedHeight="0dip"
+            app:content="@+id/value"
+            app:handle="@+id/expand" >
+
+            <LinearLayout style="@style/linear_layout_vertical" >
+                <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/household" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+
+                    <CheckBox
+                        android:id="@+id/chkMultipleChildren"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/multiple_children"
+                        android:visibility="gone"/>
+
+                    <TextView android:text="@string/txtNoMothers" style="@style/text_label" android:contentDescription="@string/detailsMothersNo2"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtMothersNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="2"
+                        android:text="0"
+                        android:inputType="numberDecimal"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+                    <TextView android:text="@string/txtNoMothersPg" style="@style/text_label" android:contentDescription="@string/detailsNoMothers"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id = "@+id/txtMothersNo2"
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:maxLength="2"
+                        android:text="0"
+                        android:inputType="numberDecimal"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+                    <TextView android:text="@string/txtNoChildren" style="@style/text_label" android:contentDescription="@string/detailsNoNewBorn"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtNewBorns"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="2"
+                        android:text="0"
+                        android:inputType="numberDecimal"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+                    <TextView android:text="@string/txtNoNewBorn" style="@style/text_label" android:contentDescription="@string/detailsChildrenNo"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtChildrenNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="2"
+                        android:text="0"
+                        android:inputType="numberDecimal"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+                    <TextView android:text="@string/txtNoWomen" style="@style/text_label" android:contentDescription="@string/detailsWomen"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtWomen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="2"
+                        android:text="0"
+                        android:inputType="numberDecimal"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+                    <TextView android:text="@string/txtOthers" style="@style/text_label" android:contentDescription="@string/detailsOtherPeople"/>
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtOtherPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="2"
+                        android:text="0"
+                        android:inputType="numberDecimal"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelBasicInfo"
+            style="@style/m_expandable_panel"
+            app:animationDuration="500"
+            app:collapsedHeight="0dip"
+            app:content="@+id/value"
+            app:handle="@+id/expand" >
+
+            <LinearLayout style="@style/linear_layout_vertical" >
+                <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/basic_info" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+                    <!-- <TextView android:text="@string/county" style="@style/spinner_label" android:contentDescription="@string/county"/>
+                     <Spinner android:id="@+id/spnCounty" style="@style/yes_no_na_spinner" android:entries="@array/countys"></Spinner>
+
+                     <TextView android:text="@string/sub_county" style="@style/spinner_label" android:contentDescription="@string/sub_county"/>
+                     <Spinner android:id="@+id/spnSubCounty" style="@style/yes_no_na_spinner" android:entries="@array/sub_countys"></Spinner>
+                    -->
+
+                    <TextView android:text="@string/sub_location" style="@style/spinner_label" android:contentDescription="@string/sub_location"/>
+                    <Spinner android:id="@+id/spnSublocation"  android:layout_width="match_parent" android:layout_height="24dp" android:entries="@array/single_select_value"></Spinner>
+
+                    <TextView android:text="@string/village" style="@style/spinner_label" android:contentDescription="@string/village_name"/>
+                    <Spinner android:id="@+id/spnVillage" android:layout_width="match_parent" android:layout_height="24dp" android:visibility="invisible"  ></Spinner>
+
+                    <!--<com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtVillageName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/village_name"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"/>-->
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtHouseholdMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:hint="@string/houseNr"
+                        android:maxLength="10"
+                        android:inputType="numberDecimal"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/txtHouseholdMember"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/houseHead"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/txtSecondName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/second_name"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/txtThirdName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/third_name"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/txtNickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nickname"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/txtLandmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/landmark"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelDeathInfo" style="@style/m_expandable_panel" app:animationDuration="500" app:collapsedHeight="0dip"  app:content="@+id/value" app:handle="@+id/expand" >
+            <LinearLayout style="@style/linear_layout_vertical" >
+                <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/death_info" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+                    <TextView android:text="@string/ad_name" style="@style/spinner_label" android:contentDescription="@string/ad_name_desc"/>
+
+
+                    <LinearLayout style="@style/linear_layout_vertical" android:background="@color/accent">
+                        <LinearLayout style="@style/linear_layout_horizontal">
+                            <TextView android:text="@string/ad_a" style="@style/spinner_label_horizontal_clickable" android:contentDescription="@string/ad_a_desc" />
+                            <Spinner android:id="@+id/spnAD_a" style="@style/count_spinner_horizontal"></Spinner>
+                        </LinearLayout>
+                        <LinearLayout style="@style/linear_layout_horizontal">
+                            <TextView android:text="@string/ad_b" style="@style/spinner_label_horizontal_clickable" android:contentDescription="@string/ad_b_desc" />
+                            <Spinner android:id="@+id/spnAD_b" style="@style/count_spinner_horizontal"></Spinner>
+                        </LinearLayout>
+                        <LinearLayout style="@style/linear_layout_horizontal">
+                            <TextView android:text="@string/ad_c" style="@style/spinner_label_horizontal_clickable" android:contentDescription="@string/ad_c_desc" />
+                            <Spinner android:id="@+id/spnAD_c" style="@style/count_spinner_horizontal"></Spinner>
+                        </LinearLayout>
+                        <LinearLayout style="@style/linear_layout_horizontal">
+                            <TextView android:text="@string/ad_d" style="@style/spinner_label_horizontal_clickable" android:contentDescription="@string/ad_d_desc" />
+                            <Spinner android:id="@+id/spnAD_d" style="@style/count_spinner_horizontal"/>
+                        </LinearLayout>
+                        <LinearLayout style="@style/linear_layout_vertical" android:paddingLeft="8dp" android:paddingRight="12dp">
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/txtDeathInfoOther"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/ad_e"
+                                app:met_floatingLabelTextColor="@color/primary"
+                                app:met_floatingLabel="normal"
+                                android:textSize="12sp"
+                                android:minLines="5"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelHouseholdInfo" style="@style/m_expandable_panel" app:animationDuration="500" app:collapsedHeight="0dip"  app:content="@+id/value" app:handle="@+id/expand" >
+            <LinearLayout style="@style/linear_layout_vertical" >
+                <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/household_info" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+                    <TextView android:text="@string/ai_name" style="@style/spinner_label" android:contentDescription="@string/ai_name_desc"/>/>
+                    <Spinner android:id="@+id/spnAI" style="@style/yes_no_spinner"></Spinner>
+
+                    <TextView android:text="@string/aj_name" style="@style/spinner_label" android:contentDescription="@string/aj_name_desc"/>/>
+                    <Spinner android:id="@+id/spnAJ" style="@style/yes_no_spinner"></Spinner>
+
+                    <TextView android:text="@string/ak_name" style="@style/spinner_label" android:contentDescription="@string/ak_name_desc"/>/>
+                    <Spinner android:id="@+id/spnAK" style="@style/yes_no_spinner"></Spinner>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+
+
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelChronic"
+            style="@style/m_expandable_panel"
+            app:animationDuration="500"
+            app:collapsedHeight="0dip"
+            app:content="@+id/value"
+            app:handle="@+id/expand" >
+
+            <LinearLayout style="@style/linear_layout_vertical" >
+                <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/y_name" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+
+                    <TextView android:text="@string/y_name" style="@style/spinner_label" android:contentDescription="@string/y_name_desc"/>
+                    <LinearLayout style="@style/linear_layout_vertical" android:background="@color/accent">
+                        <LinearLayout style="@style/linear_layout_horizontal">
+                            <TextView android:text="@string/y_a_diabetes" style="@style/spinner_label_horizontal" />
+                            <Spinner android:id="@+id/spnY_a" style="@style/count_spinner_horizontal"></Spinner>
+                        </LinearLayout>
+                        <LinearLayout style="@style/linear_layout_horizontal">
+                            <TextView android:text="@string/y_b_Cancer" style="@style/spinner_label_horizontal" />
+                            <Spinner android:id="@+id/spnY_b" style="@style/count_spinner_horizontal"></Spinner>
+                        </LinearLayout>
+                        <LinearLayout style="@style/linear_layout_horizontal">
+                            <TextView android:text="@string/y_c_mental_illness" style="@style/spinner_label_horizontal" />
+                            <Spinner android:id="@+id/spnY_c" style="@style/count_spinner_horizontal"></Spinner>
+                        </LinearLayout>
+                        <LinearLayout style="@style/linear_layout_horizontal">
+                            <TextView android:text="@string/y_d_hypertension" style="@style/spinner_label_horizontal" />
+                            <Spinner android:id="@+id/spnY_d" style="@style/count_spinner_horizontal"/>
+                        </LinearLayout>
+                        <LinearLayout style="@style/linear_layout_vertical" android:paddingLeft="8dp" android:paddingRight="12dp">
+                            <com.rengwuxian.materialedittext.MaterialEditText
+                                android:id="@+id/txtReferalIllnessOther"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/y_e_other"
+                                app:met_floatingLabelTextColor="@color/primary"
+                                app:met_floatingLabel="normal"
+                                android:textSize="12sp"
+                                android:minLines="5"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelOthersInfo" style="@style/m_expandable_panel" app:animationDuration="500" app:collapsedHeight="0dip"  app:content="@+id/value" app:handle="@+id/expand" >
+            <LinearLayout style="@style/linear_layout_vertical" >
+                <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/others" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+                    <!--<TextView android:text="@string/z_name" style="@style/spinner_label"/>
+                    <Spinner android:id="@+id/spn" style="@style/yes_no_na_spinner"></Spinner>-->
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/txtRemarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ae_name"
+                        app:met_floatingLabelTextColor="@color/primary"
+                        app:met_floatingLabel="normal"/>
+
+                    <TextView android:text="@string/ae_name_desc" style="@style/spinner_label" android:contentDescription="@string/ae_name_desc"/>/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/linear_layout_vertical" android:visibility="gone" android:id="@+id/sectionFollow">
+
+            <TextView android:text="House Registration ID" style="@style/text_label" android:contentDescription=""/>
+
+            <LinearLayout style="@style/linear_layout_horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtHouseRegIdSub"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="KAM"
+                    android:layout_weight="2"
+                    android:layout_marginRight="4dp"
+                    android:padding= "13dp"
+                    android:focusable="false"
+                    />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtHouseRegId"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginRight="4dp"
+                    android:padding= "13dp"
+                    android:inputType="numberDecimal"
+                    />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtHouseRegIdDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginRight="4dp"
+                    android:text="017"
+                    android:padding= "13dp"
+                    android:focusable="false"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:onClick="search"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

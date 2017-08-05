@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/linear_layout_vertical"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dewcis.mdss.Home"
+    android:scrollbars="none">
+    <LinearLayout style="@style/linear_layout_vertical" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblDisplayUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout android:weightSum="6" style="@style/linear_layout_horizontal">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/txtRegId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/reg_id"
+        app:met_floatingLabelTextColor="@color/primary"
+        app:met_floatingLabel="normal"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="DSS"
+            android:onClick="setReg"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_layout_horizontal">
+
+        <Button
+            android:id="@+id/btnNew513"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/new_513"
+            android:onClick="btn513"
+            android:drawableStart="@android:drawable/ic_input_add"
+            android:drawableLeft="@android:drawable/ic_input_add"/>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_layout_horizontal">
+
+
+        <Button
+            android:id="@+id/btnNewSurvey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/new_514"
+            android:drawableStart="@android:drawable/ic_input_add"
+            android:drawableLeft="@android:drawable/ic_input_add"/>
+        <Button
+            android:id="@+id/btnNew100"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/new_100"
+            android:drawableStart="@android:drawable/ic_input_add"
+            android:drawableLeft="@android:drawable/ic_input_add"/>
+
+    </LinearLayout>
+
+    <com.dewcis.mdss.utils.ExpandablePanel
+        android:id="@+id/panelMessages"
+        style="@style/m_expandable_panel"
+        app:animationDuration="500"
+        app:collapsedHeight="0dip"
+        app:content="@+id/value"
+        app:handle="@+id/expand"
+        android:clickable="false">
+
+    <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/surveyReturned" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+        <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+            <TextView
+                android:id="@+id/lblRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@color/primary_dark"
+                android:padding="4dp"
+                android:text="@string/returned"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:drawableRight="@android:drawable/ic_menu_rotate"/>
+
+            <ListView
+                android:id="@+id/elist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+        </LinearLayout>
+    </com.dewcis.mdss.utils.ExpandablePanel>
+
+    <com.dewcis.mdss.utils.ExpandablePanel
+        android:id="@+id/panelReturned"
+        style="@style/m_expandable_panel"
+        app:animationDuration="500"
+        app:collapsedHeight="0dip"
+        app:content="@+id/value"
+        app:handle="@+id/expand"
+        android:clickable="false">
+
+    <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/health_worker_rec" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+    <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+        <TextView
+            android:id="@+id/lblRefresh2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/primary_dark"
+            android:padding="4dp"
+            android:text="@string/mesages"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:drawableRight="@android:drawable/ic_menu_rotate"/>
+        <ListView
+            android:id="@+id/mlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+</com.dewcis.mdss.utils.ExpandablePanel>
+    <com.dewcis.mdss.utils.ExpandablePanel
+        android:id="@+id/panelClinicianAlerts"
+        style="@style/m_expandable_panel"
+        app:animationDuration="500"
+        app:collapsedHeight="0dip"
+        app:content="@+id/value"
+        app:handle="@+id/expand"
+        android:clickable="false">
+
+        <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/clinicianAlerts" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+        <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+            <TextView
+                android:id="@+id/lblRefresh3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@color/primary_dark"
+                android:padding="4dp"
+                android:text="@string/mesages"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:drawableRight="@android:drawable/ic_menu_rotate"/>
+            <ListView
+                android:id="@+id/alist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+    </com.dewcis.mdss.utils.ExpandablePanel>
+    </LinearLayout>
+
+
+</ScrollView>

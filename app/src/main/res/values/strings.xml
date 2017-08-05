@@ -1,0 +1,350 @@
+<resources>
+    <string name="app_name">mPamanech</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_about">About</string>
+
+    <string name="powered">Powered By APHRC</string>
+
+    <!-- volley Helper -->
+    <string name="generic_server_down">Sorry, Request Couldn\'t Be Completed</string>
+    <string name="generic_error">Network Error</string>
+    <string name="connection">No Network Connection</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_form100">Community Referral Form</string>
+    <string name="new_513">New 513</string>
+    <string name="pick_time">Pick date</string>
+    <string name="Swelling_hands">Swelling in the hands?</string>
+    <string name="convulsions">Convulsions or fits?</string>
+    <string name="Breathing">Difficulty breathing</string>
+    <string name="Urination">Painful urination?</string>
+    <string name="pale_pams">Very pale palms of hands or nail beds?</string>
+    <string name="genital_ulcers">Genital ulcer?</string>
+    <string name="fever_chills">Fever with chills?</string>
+    <string name="fever_nochills">Fever without chills?</string>
+    <string name="placenta">Placenta not delivered in 30 minutes?</string>
+    <string name="section_one">Section One</string>
+    <string name="section_two">Section two</string>
+    <string name="section_three">Section Three</string>
+    <string name="section_four">Section Four</string>
+    <string name="section_five">Section Five</string>
+    <string name="section_six">Section Six</string>
+    <string name="pregnant_mothers">Pregnant Mothers</string>
+    <string name="postmothers">Post Partum Mothers</string>
+    <string name="not_breathing">Not breathing</string>
+    <string name="yellow_skin">Skin yellow in color?</string>
+    <string name="feet_blue">Skin on palms and soles of feet are blue?</string>
+    <string name="not_sucking">Unable to suck?</string>
+    <string name="category_selector">Options :</string>
+    <string name="child">Child</string>
+    <string name="mother">Mother</string>
+    <string name="postpartum">Post-Partum Mothers</string>
+    <string name="not_suckingOrPoor">Unable to suck or poor sucking?</string>
+    <string name="constipation">Diarrhea/constipation?</string>
+    <string name="eye_discharge">Red swollen eyes with discharge?</string>
+    <string name="cord_discharge">Redness and discharge around the cord?</string>
+    <string name="atBirth">First seven days (0 - 7 days)</string>
+    <string name="sevenDays">First seven days</string>
+    <string name="first_seven_days">First seven days</string>
+    <string name="days">Days</string>
+    <string name="form_place">Place of Visit</string>
+    <string name="house_member_name">Fullname + name of CHV</string>
+    <string name="fullyImmunized">Fully Immunized</string>
+    <string name="vitaminAGiven">Vitamin A given</string>
+    <string name="severelyMalnutritioned">Severely Malnourished (MUAC indicating Yellow)</string>
+    <string name="moderatelyMalnourished">Moderately Malnourished (MUAC indicating Yellow)</string>
+    <string name="knownChronic">Known chronic illness</string>
+    <string name="knowsHIVStatus">Known HIV Status</string>
+    <string name="household_indicators">Household Level Indicators</string>
+    <string name="individual_indicators">Individual Level Indicators</string>
+    <string name="individual_details">Individual Details</string>
+    <string name="deaths">Deaths</string>
+    <string name="safe_water">Access to safe water</string>
+    <string name="treated_water">Use of treated water</string>
+    <string name="washing_facilities">Hand washing facilities</string>
+    <string name="latrine">Latrine</string>
+    <string name="disposal">Functional Latrine</string>
+    <string name="date_death">Date of Death</string>
+    <string name="individual_code">Individual code</string>
+    <string name="nameOfMember">Name of household member</string>
+    <string name="comment">Comments</string>
+    <string name="r_toHHH">This should be recorded using the key provided i.e. 1 for Household head, 2 for spouse, 3 for Child by Birth, 4 for Child by Registration, 5 for grand  child , 6  for brother or sister, and  7 for others</string>
+    <string name="r_orpan">Record by marking a tick (✔ )  when household member is an orphan.  Record (X) if the household member is not an orphan. An orphan is someone with one or both parents dead, and less than 18 years old. Record N/A if member is over 18 years</string>
+    <string name="r_birthCertificate">Record by marking a tick (✔)  when household member has a birth certificate. Record (X) if the household member does not have a birth certificate</string>
+    <string name="r_school">Record by marking a tick (✔)  when the household member is in school , or (X) when the household member  is not going to school. The indicator refers to children of school age (for primary education). This is the age of 6-18 years (Ministry of Education of Kenya). Record N/A if member is below 6 years or over 18 years of age</string>
+    <string name="r_pregnant">Record  by  Indicating  with a tick (✔) whether a household female member is  pregnant or (X) if the household female member is  not pregnant. The CHV should observe or ask the woman in the household. Record N/A if member is male</string>
+    <string name="r_anc">Record by marking with a tick (✔)  if a household member who is a mother of a child  of 0-11 months completed at least 4 Ante Natal Clinic (ANC) visits during the pregnancy period or mark with a (X) if a household member who is a mother of a child  of 0-11 months did not complete at least 4 Ante Natal Clinic (ANC) visits during the pregnancy period. Record N/A if member is not a mother of a child of 0-11 months</string>
+    <string name="r_booklet">Record with a tick (✔)  if the  household member has been issued  with  a mother and  Child  Health  booklet. Record (X) if the  household member has not been issued. Record N/A if member is not a pregnant mother or child of 0-59 months</string>
+    <string name="r_attendant">Record   by marking with a tick (✔ )  if delivery within the past 6 months was  through  a Skilled Birth Attendant or  (X) if delivery within the past 6 months was not through a Skilled Birth Attendant.Note that traditional birth attendants (TBA) are not considered Skilled Birth Attendants. Record N/A if a female member did not give birth over the past 6 months or  the member is a male or a child</string>
+    <string name="r_feeding">Record by marking a tick (✔ )  when the child in the household is less than 6 months and is exclusively breastfed, or (X) when the child who is less than 6 months in the household is not exclusively breastfed. Record N/A if member is not a child of 0-6 months</string>
+    <string name="r_planning">Record  one of the provided numbers i.e. 1 for Modern, 2 for Traditional/ Natural, 3 for None to indicate  the family  planning   method  used. This applies to women of reproductive age (15-49 years). Record 4 for N/A if member is not a woman of reproductive age</string>
+    <string name="r_penta1">Record by marking a tick (✔ )  when a child aged 6 weeks -11 months in the household was given Penta1 or (X) if the child was not given Penta1. Record N/A if member is not a child aged 6 weeks -11 months</string>
+    <string name="r_penta3">Record by marking a tick (✔ )  when a child aged 14 weeks-11 months in the household was given Penta 3 or (X) if the child was not given Penta 3. Record N/A if member is not a child aged 14 weeks -11 months</string>
+    <string name="r_measles">Record by marking a tick (✔ )  when a child of  9-18 months age in the household was given Measles vaccination or (X) if the child was not given  Measles vaccination. Record N/A if the member is not a child aged 9 -18 months</string>
+    <string name="r_immunized">Record by marking a tick (✔ )  when a child of  9-11 months of age in the household was given ALL vaccinations required or (X) if the child was not given ALL vaccinations required. Record N/A if member is not a child aged 9 -11 months</string>
+    <string name="r_vitamin">Record by marking a tick (✔ ) when the child 6-59 months in the household was given Vitamin A in the last 6 months or (X) if the child was not given Vitamin A in the last 6 months. Record N/A if member is not a child aged 6-59 months</string>
+    <string name="r_children">Record by marking a tick (✔ )  when the child in the household aged 6-23 months  receives 3 or more food  groups  per  day or  (X) if the child does not receive 3 or more food  groups  per  day. Ask what food the child was given  over the past 24 hours and determine the food groups in the food provided. Ask question where there are children of less than 24 months of age.  Record N/A if member is not a child aged 6-23 months</string>
+    <string name="r_malnourished">Record by marking a tick (✔ )  when the household child\'s (6-59 months age) mid upper circumference (MUAC) is red or (X) when the child has MUAC that is  not red. Record N/A if member is not a child aged 6-59 months</string>
+    <string name="r_mMalnourished">Record by marking a tick (✔ )  when the household child\'s (6-59 months age) mid upper circumference (MUAC) is yellow or (X) when the child has MUAC that is not yellow. Record N/A if member is not a child aged 6-59 months</string>
+    <string name="r_llin">Record by marking with tick (✔ )  whether the household member slept under a Long Lasting  Insecticide Net (LLIN) the night before or  (X) when the household member did not sleep under LLIN the night before.</string>
+    <string name="r_illness">Record one or more of the  numbered illnesses  for  any  known chronic illness  observed: 0-None, 1=Diabetes, 2=Cancer, 3=Mental Illness, 4=Hypertension, 5=Chronic Respiratory Diseases, 6=Other. It is a chronic illness if someone has had a diagnosed illness for 1 year or more without healing</string>
+    <string name="r_cough">Record by marking a tick (✔ )  when the household member has  had cough  for 2 weeks or longer or (X) when the household member has not had a cough or has had it for less than 2 weeks</string>
+    <string name="r_hiv">Record by marking a tick (✔ )  when the household member  knows his/her HIV status (checked during the past 6 months), or (X ) when the household member does not know his/her HIV status. Record N/A for a small child</string>
+    <string name="r_disability">Indicate any   identified   kind or  type  of disability for the household member by  choosing one or more numbers out of the  numbers given i.e. 0=None, 1=Visual, 2=Hearing, 3=Speech, 4=Physical, 5=Mental, 6=Other</string>
+    <string name="r_safeWater">Record by marking a tick (✔ ) when the household has access to safe water or (X) when the household does not have access to safe water</string>
+    <string name="r_treatedWater">Use of Treated Water \tRecord by marking a tick (✔ ) when the household always uses water that is treated or (X) when the household does not use treated water.</string>
+    <string name="r_washingFacility">Record by marking a tick (✔ )  when the household has hand  washing  facilities such as Tippy Tap and leaky  tin or hand wash basin or (X) when the household does not have hand washing facilities</string>
+    <string name="r_latrineFunctional">Use a tick (✔) if the household uses a functional latrine or (X) if the household does not use a functional latrine. The description of functional latrine will depend on whether it is in an urban area (slum or not) or rural area</string>
+    <string name="disposalFacility">Refuse Disposal Facility</string>
+    <string name="r_refuseDisposal">Record by marking a tick (✔ ) when the household has a refuse disposal facility or (X)  when the household does not have a refuse disposal facility</string>
+    <string name="other">Other Disabilities</string>
+    <string name="clinicianRec">Clinician Recommendations</string>
+    <string name="surveyReturned">Returned Surveys</string>
+    <string name="mesages">Instructions</string>
+    <string name="newBorn">New born</string>
+    <string name="pastNewBorn">Older than 28 days</string>
+    <string name="vomiting">A lot of vomiting</string>
+    <string name="extreme">Extreme weight loss</string>
+    <string name="abdominal_discharge">Vaginal discharge</string>
+    <string name="loss_consciousness">Loss of Consciousness</string>
+    <string name="head_dizzy">Headaches, dizziness/faintness</string>
+    <string name="diff_breathing">Difficulty breathing</string>
+    <string name="pass_urine">Difficulty passing urine</string>
+    <string name="palm_feet">Palm of the hands and feet lighter than normal</string>
+    <string name="tiredness">Tiredness</string>
+    <string name="always_sleepy">Always seems sleepy</string>
+    <string name="fast_breathing">Fast breathing ( 60 breaths or more in 1 minute count )</string>
+    <string name="chest_drawing">Chest in drawing</string>
+    <string name="loosing_weight">Baby loosing excessive weight</string>
+    <string name="yellow_soles">Yellow soles</string>
+    <string name="txtHouseNum">Mobile</string>
+    <string name="high_blood">High Blood Pressure</string>
+    <string name="reg_id">Enter Clients Mobile No.</string>
+    <string name="Name_DSS">Name</string>
+    <string name="Age_DSS">Age in days</string>
+    <string name="motherGuardian">Mothers Name</string>
+    <string name="Age_Mother">Age in years</string>
+    <string name="form_serialOrPhone">Clients Mobile No.</string>
+    <string name="clinicianAlert">Defaulted Patients</string>
+    <string name="clinicianAlerts">Alerts</string>
+    <string name="community_health_unit_name_other">Other Health Community</string>
+    <string name="first_seven_day">First 28 days</string>
+    <string name="panel_name">add name</string>
+    <string name="seven28Days">First 28 days</string>
+    <string name="Name_full">Mothers full name</string>
+    <string name="dischage">Heavy vaginal discharge</string>
+    <string name="panel_three">Indicator Three</string>
+    <string name="panel_two">Indicator Two</string>
+    <string name="panel_one">Indicator One</string>
+    <string name="community_health_unit_other">Other health facility</string>
+    <string name="baby_weight">New born\'s weight</string>
+    <string name="baby_weight_at">New born\'s weight at birth in kgs</string>
+    <string name="survey_id">Survey ID</string>
+    <string name="clinicianName">Health worker</string>
+    <string name="patient_name">Name of the patient</string>
+    <string name="phone">Phone</string>
+    <string name="otherFacility">Other facility</string>
+    <string name="clnician">Name of clinician</string>
+    <string name="health_facility">Health facility</string>
+    <string name="patient">Patient name</string>
+    <string name="patient_number">Patient numbe</string>
+    <string name="patient_num">Patient Number</string>
+    <string name="message_clinician">Message from clinician</string>
+    <string name="other_facility">Other health facility</string>
+    <string name="message_status">Message status</string>
+    <string name="health_worker_rec">Health worker instructions</string>
+    <string name="action_taken_referral">Actions taken by CHV</string>
+    <string name="referralFacility">Name of Referral Facility</string>
+    <string name="message_back">Respond after follow up</string>
+    <string name="message_from">Message from system</string>
+    <string name="message_from_health">Message from the health facility</string>
+    <string name="txtNoChildren">No. of Newborns</string>
+    <string name="txtNoNewBorn">No. of Children under 5</string>
+    <string name="full_name_member">Household Member\'s Name</string>
+    <string name="txtNoMothers">No. of Post Partum Mothers</string>
+    <string name="txtNoMothersPg">No. of Pregnant Mothers</string>
+    <string name="txtWomen">Mother</string>
+    <string name="txtNoWomen">No. of Other Mothers/Women of reproductive age</string>
+    <string name="no_members">No. of household members</string>
+    <string name="household">Household Members</string>
+    <string name="txtOthers">No. of Other Members</string>
+    <string name="first_name">First name</string>
+    <string name="second_name">House head second name</string>
+    <string name="third_name">House head third name</string>
+    <string name="no_deaths">No. of Deaths</string>
+    <string name="action_exit">Home</string>
+    <string name="background_indicators">Background Household Information</string>
+    <string name="house_indicators">Household Indicators</string>
+    <string name="houseHead">House Head First name</string>
+    <string name="houseNr">House Head Mobile Number</string>
+    <string name="age_in_complete">Age in</string>
+    <string name="ageCohort">HH Members in Age Cohort</string>
+    <string name="detailsNoMothers">Number of all pregnant mothers in the household</string>
+    <string name="detailsMothersNo2">Number of all mother who just gave birth in the past 6 weeks</string>
+    <string name="detailsChildrenNo">Number of all children in the house aged 29 days to 59 months (a girl or boy who is between 29 days but has not reached 5 years) </string>
+    <string name="detailsNoNewBorn">Number of all newborns in the house 0 - 28 days of age</string>
+    <string name="detailsWomen">Number of all women not included in the pregnant or the postpartum section (all women of reproductive age from 12 years who 1) have children 2) may not have children and are not pregnant 3) are over 6 weeks postpartum)</string>
+    <string name="detailsOtherPeople">Men, boys above 5 years, Elderly (above 60 years) and girls (between 5 + years to 12 years - a girl who has reached 5 years but not reached 12 years) </string>
+    <string name="newborns">Newborns full name</string>
+    <string name="validate">Next</string>
+    <string name="next">Enter next members information</string>
+    <string name="house_head">House head</string>
+    <string name="status">Patients status</string>
+    <string name="mothersAgeGroup">Mothers age cohort</string>
+    <string name="age_house">Age of HH member</string>
+    <string name="houseHeadName">House head full name</string>
+    <string name="household_indicators2">Individual Level Indicators 2</string>
+    <string name="ageDays">Child less than 7 days</string>
+    <string name="age_death">Age of Deceased</string>
+    <string name="nickname">Nickname</string>
+    <string name="landmark">Landmarks</string>
+    <string name="firstTime">New</string>
+    <string name="otherTime">Follow up</string>
+    <string name="first">First time</string>
+    <string name="followUp">Follow up</string>
+    <string name="needAction">Please enter the actions taken after receiving instructions from the clinician.</string>
+    <string name="patientAge">Patients Age</string>
+    <string name="patient_reg">Registration ID/ Mobile</string>
+    <string name="Instuct">INSTRUCTIONS</string>
+    <string name="stage">Patients status</string>
+    <string name="houseFullName">House Heads Fullname</string>
+    <string name="action_draft">Drafts</string>
+    <string name="referral_services">Referral services</string>
+    <string name="pregnancy_history">Pregnancy history</string>
+    <string name="first_pregnancy">Is this your first pregnancy</string>
+    <string name="months_pregnant">How many months pregnant are you</string>
+    <string name="anc_visit">So far, how many ANC visits have you received for this pregnancy</string>
+    <string name="postpartumHistory">Birth history</string>
+    <string name="time_birth">How long ago did you give birth</string>
+    <string name="first_baby">Is this your first baby</string>
+    <string name="pnc_attended">How many PNC have you attended since you gave birth (after release from hospital)</string>
+    <string name="start_feeding">How soon after birth did you start breast feeding</string>
+    <string name="fed_birth">What has the child fed on since birth</string>
+    <string name="child_fed">Yesterday (throughout the day and night) what was the child fed on</string>
+    <string name="breastfeeding">Breastfeeding history</string>
+    <string name="pregnant_first_anc">How many months pregnant were you when you first attended ANC</string>
+    <string-array name="Feeds">
+        <item>Apples versus Oranges</item>
+    </string-array>
+
+    <string-array name="message_stat">
+        <item>Pending</item>
+        <item>Received</item>
+        <item>Task Completed</item>
+    </string-array>
+
+    <string-array name="arr_cohort">
+        <item>Select option</item>
+        <item>1 = 0 - 28 days </item>
+        <item>2 = 29 days -11 months </item>
+        <item>3 = 2 -59 months</item>
+        <item>4 = 5 - 12 years</item>
+        <item>5 = 13 - 24 girls</item>
+        <item>6 = 13 - 24 boys</item>
+        <item>7 = 25 - 59 years</item>
+        <item>8 = 60 years and above</item>
+    </string-array>
+
+    <string-array name="start_feeding">
+        <item>Select option</item>
+        <item>Immediately/ less than 30 minutes</item>
+        <item>30 minutes to 1 hour</item>
+        <item>More than 1 hour</item>
+        <item>Don’t Know</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="fed_birth">
+        <item>Select option</item>
+        <item>Breast milk only</item>
+        <item>Breast milk and plain water</item>
+        <item>Breast milk and water (with salt and sugar/ glucose solution)</item>
+        <item>Others ( solids food, dairy, other liquids)</item>
+    </string-array>
+
+    <string-array name="months_pregnant">
+        <item>Select option</item>
+        <item>1 to 3 months</item>
+        <item>4 to 6 months</item>
+        <item>7 to 9 months</item>
+    </string-array>
+
+    <string-array name="months_pregnant2">
+        <item>Select option</item>
+        <item>1 to 3 months</item>
+        <item>4 to 6 months</item>
+        <item>7 to 9 months</item>
+        <item>Has not started</item>
+    </string-array>
+
+    <string-array name="anc_visit">
+        <item>Select option</item>
+        <item>None</item>
+        <item>1 visit</item>
+        <item>2 visits</item>
+        <item>3 visits</item>
+        <item>4+</item>
+    </string-array>
+
+    <string-array name="time_birth">
+        <item>Select option</item>
+        <item>Less than 1 week ago</item>
+        <item>1 to 2 weeks ago</item>
+        <item>2 to 3 weeks ago</item>
+        <item>3 to 4 weeks ago</item>
+        <item>4 to 5 weeks ago</item>
+        <item>5 to 6 weeks ago</item>
+        <item>More than 6 weeks ago</item>
+    </string-array>
+
+    <string-array name="age_cohort">
+        <item>Select option</item>
+        <item>1 = below 15 years</item>
+        <item>2 = 15 - 19 years</item>
+        <item>3 = 20 - 24 years</item>
+        <item>4 = 25 - 29 years</item>
+        <item>5 = 30 - 34 years</item>
+        <item>4 = 35 - 39 years</item>
+        <item>6 = 40 - 44 years</item>
+        <item>7 = 45 - 49 years</item>
+        <item>8 = 50 years and above</item>
+    </string-array>
+
+    <string-array name="pnc_attended">
+        <item>Select option</item>
+        <item>None</item>
+        <item>1 visit</item>
+        <item>2 visits</item>
+        <item>More than 2 visits</item>
+    </string-array>
+
+    <string-array name="chronic">
+        <item>Select Option</item>
+        <item>None</item>
+        <item>Diabetes</item>
+        <item>Cancers</item>
+        <item>Mental Illness</item>
+        <item>Hypertension</item>
+        <item>Chronic Respiratory Diseases</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Select Option</item>
+        <item>Postpartum</item>
+        <item>Pregnant</item>
+        <item>Children under 5</item>
+        <item>Newborn</item>
+        <item>Other Women</item>
+        <item>Other Members</item>
+    </string-array>
+
+    <string-array name="message_alert">
+        <item>Pending</item>
+        <item>Done</item>
+    </string-array>
+
+</resources>

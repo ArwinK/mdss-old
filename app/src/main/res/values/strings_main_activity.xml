@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="basic_info">Basic Information</string>
+    <string name="return_reason">Return Reason</string>
+    <string name="multiple_children">Multiple Children</string>
+
+    <string name="county">County</string>
+    <string-array name="countys">
+        <item>Nairobi</item>
+    </string-array>
+
+    <string-array name="single_select_value">
+        <item>SELECT</item>
+    </string-array>
+
+    <string name="sub_county">Sub County</string>
+    <string-array name="sub_countys">
+        <item>Select Sub County</item>
+        <item>Makadara</item>
+        <item>Ruaraka</item>
+    </string-array>
+
+    <string name="mdivision">Division</string>
+    <string name="location">Location</string>
+    <string name="sub_location">Sub Location</string>
+
+    <string-array name="empty_array">
+        <item>None</item>
+    </string-array>
+
+    <string name="date">Date</string>
+    <string name="village_name">Community Unit</string>
+    <string name="village">Community Unit</string>
+    <string name="household_num">Household Number</string>
+    <string name="name_of_hsehold_member">Name of household member</string>
+
+    <string-array name="items">
+        <item>Our first Item</item>
+        <item>Our second Item</item>
+        <item>Our third Item</item>
+    </string-array>
+
+    <string-array name="yes_no_na">
+        <item>Select option</item>
+        <item>Yes (✔)</item>
+        <item>No  (<b>X</b>)</item>
+        <item>N/A</item>
+    </string-array>
+
+    <string-array name="yes_no">
+        <item>Select option</item>
+        <item>Yes (✔)</item>
+        <item>No  (<b>X</b>)</item>
+    </string-array>
+
+    <string name="gender">Gender</string>
+    <string name="gender_desc">Gender of child</string>
+    <string-array name="gender">
+        <item>Select option</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="num_list">
+        <item>Select</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="mother_info">Mother Information</string>
+    <string name="pregnant">Pregnant</string>
+    <string name="pregnant_desc">Record  by  Indicating  with a tick (✔) whether a household female member is  pregnant or (X) if the household female member is  not pregnant. The CHV should observe or ask the woman in the household. Record N/A if the member is not a woman of reproductive age (15-49 years)</string>
+
+    <string name="f_name" >Pregnant woman counselled on Individual Birth Plan (IBP)</string>
+    <string name="f_name_desc" >Record  by  Indicating  with a tick (✔) whether the pregnant woman is counselled on Individual Birth Plan (IBP) or (X) if not. Record N/A if the member is not a pregnant woman </string>
+
+    <string name="g_name">Woman delivered by unskilled attendant</string>
+    <string name="g_name_desc">Record   by marking with a tick (✔ )  if delivery since the last visit was by unskilled attendant.Note – traditional birth attendants (TBA)  are considered unskilled. Record N/A if the member is not a woman who delivered since last visit</string>
+
+    <string name="h_name">Woman  delivered by skilled attendant</string>
+    <string name="h_name_desc">Record   by marking with a tick (✔ )  if delivery since the last visit was by skilled attendant.Note – traditional birth attendants (TBA) are considered not skilled attendants. Record N/A if the member is not a woman who delivered since last visit</string>
+
+
+    <string name="i_name">New-born visited at home within 48 hours of delivery</string>
+    <string name="i_name_desc">Record  by  Indicating  with a tick (✔) if New-born was visited at home within 48 hours of delivery or (X) if not. Record N/A if the member is not a new-born </string>
+
+    <string name="j_name">Mother with new-born counselled on Exclusive Breast Feeding (EBF)</string>
+    <string name="j_name_desc">Record  by  Indicating  with a tick (✔) if Mother with new-born (0-28 days) is counselled on Exclusive Breast Feeding (EBF) or (X) if not. Record N/A if the household member is not a mother of a new-born</string>
+
+    <string name="k_name">Woman 15-49yrs provided with Family Planning commodities by CHVs</string>
+    <string name="k_name_desc">Record  by  Indicating  with a tick (✔) if a Woman 15-49 years is provided with Family Planning commodities by CHVs or (X) if a woman of 15-49 years was not provided. Record N/A if the member is not a woman of reproductive age (15-49 years)</string>
+
+
+
+    <string name="child_info">Child Information</string>
+    <string name="l_name">Child 0-59 months participating in growth monitoring</string>
+    <string name="l_name_desc">Record  by  Indicating  with a tick (✔) if a Child 0-59 months participating in growth monitoring or (X) if not. Record N/A if the household member is not a child of 0-59 months</string>
+
+    <string name="m_name">Child 6-59 months with MUAC (Red) indicating severe malnutrition </string>
+    <string name="m_name_desc">Record  by  Indicating  with a tick (✔) if a Child 6-59 months has MUAC (Red) indicating severe malnutrition or (X) if not. Record N/A if the household member is not a child of 6-59 months</string>
+
+    <string name="n_name">Child 6-59 months with MUAC (Yellow) indicating  moderate malnutrition</string>
+    <string name="n_name_desc">Record  by  Indicating  with a tick (✔) if a Child 6-59 months has MUAC (Yellow) indicating moderate malnutrition or (X) if not. Record N/A if the household member is not a child of 6-59 months</string>
+
+    <string name="o_name">Child  12-59 months dewormed</string>
+    <string name="o_name_desc">Record by marking a tick (✔ )  when the child 12-59 months  in the household was dewormed in the last 6 months or (X) if the child was not . Record N/A if the household member is not a child of 12-59 months</string>
+
+    <string name="referrals_info">Referrals Information</string>
+
+    <string name="p_name">Pregnant woman referred for ANC</string>
+    <string name="p_name_desc">Record by marking a tick (✔ )  when the Pregnant woman is referred for ANC or (X) if not. Record N/A if the household member is not a pregnant woman</string>
+
+    <string name="q_name">Pregnant women referred for skilled delivery</string>
+    <string name="q_name_desc">Record by marking a tick (✔ )  when the Pregnant woman is referred for skilled delivery or (X) if not. Record N/A if the household member is not a pregnant woman</string>
+
+    <string name="r_name">Woman referred for family planning services</string>
+    <string name="r_name_desc">Record by marking a tick (✔ )  when the woman of 15-49 years is referred for family planning services or (X) if not. Record N/A if the household member is not a woman of 15-49 years</string>
+
+    <string name="s_name">Home delivery referred for Post Natal Care (PNC) Services</string>
+    <string name="s_name_desc">Record by marking a tick (✔ ) if a home delivery is referred for Post Natal Care (PNC) Services or (X) if not. Record N/A if the household member is not a mother who delivered at home</string>
+
+    <string name="t_name">Child 0-11 months referred for immunization</string>
+    <string name="t_name_desc">Record by marking a tick (✔ ) if a child 0-11 months is referred for immunization services or (X) if not. Record N/A if the household member is not a child of 0-11 months</string>
+
+    <string name="u_name">Child 6-59 months referred for Vitamin A supplementation</string>
+    <string name="u_name_desc">Record by marking a tick (✔ ) if a child between 6 months of age to 59 Months is referred for Vitamin A supplementation  or (X) if not. Record N/A if the household member is not a child of 6-59 months</string>
+
+    <string name="v_name">Cough more than 2 weeks referred</string>
+    <string name="v_name_desc">Record by marking a tick (✔ ) if a chronic cough for two or more weeks is referred to a  health facility  or (X) if not. Record N/A when the household member has  not had chronic cough or had had it for less than 2 weeks</string>
+
+    <string name="w_name">Referred for HIV Testing and Services (HTS)</string>
+    <string name="w_name_desc">Record by marking a tick (✔ ) if  referred for HIV Counselling and Testing (HCT) or (X) if not. Record N/A for a small child</string>
+
+    <string name="x_name">Elderly (60 +) referred for routine health check-ups</string>
+    <string name="x_name_desc">Record by marking a tick (✔ ) if elderly  (60 years and above) is referred to a health facility for routine check-ups or (X) if not. Record N/A if the member is not eldery with 60 or more years</string>
+
+    <string name="y_name">Known cases of chronic illness  referred</string>
+    <string name="y_name_desc">Indicate  one or more numbers (a=Diabetes, b=Cancer, c=Mental Illness, d=Hypertension, e=Other, f=None) of  a type of chronic illness with a corresponding  tally of known cases of individuals referred to a health facility with that with illness. e.g.  d-1 for  one person is suffering from hypertension in the household. \nIt is a chronic illness if someone has been unwell for 1 year or more without healing</string>
+
+    <string name="y_a_diabetes">A: Diabetes</string>
+    <string name="y_b_Cancer">B: Cancer</string>
+    <string name="y_c_mental_illness">C: Mental Illness</string>
+    <string name="y_d_hypertension">D: Hypertension</string>
+    <string name="y_e_other">E: Others (specify in remarks)</string>
+
+    <string name="defaulters_info">Defaulters Information</string>
+    <string name="z_name">ANC defaulter referred</string>
+    <string name="z_name_desc">Record by marking a tick (✔ ) if  ANC defaulter is referred to a health facility or (X) if not. Record N/A if the member is not an ANC defaulter</string>
+
+    <string name="aa_name">Immunization defaulter referred</string>
+    <string name="aa_name_desc">Record by marking a tick (✔ ) if Child 0-59 months of age who defaulted on immunization has been referred for immunization or (X) if not. Record N/A if the member is not a child of 0-59 months or is a child of 0-59 months but did not default on immunization</string>
+
+    <string name="ab_name">TB treatment defaulter traced and referred</string>
+    <string name="ab_name_desc">Record by marking a tick (✔ ) if a Tuberculosis (TB) defaulter is referred to a health facility or (X) if not. Record N/A if the member has not had TB or has had TB but did not default</string>
+
+    <string name="ac_name">ART defaulter traced referred</string>
+    <string name="ac_name_desc">Record by marking a tick (✔ ) if an ART defaulter is referred to a health facility or (X) if not. Record N/A if the member has not been on ART or has been on ART but has not defaulted</string>
+
+    <string name="al_name">HIV exposed infant (HEI) defaulters traced and referred </string>
+    <string name="al_name_desc">Record by marking a tick (✔ ) if an HIV exposed infant (HEI) defaulter is traced and referred to a health facility or (X) if not. Record N/A if the member is not an HIV exposed infant (HEI) defaulter</string>
+
+
+    <string name="death_info">Death Information</string>
+    <string name="ad_name">Number of deaths in the month</string>
+    <string name="ad_name_desc">Number of deaths in the month</string>
+
+    <string name="ad_a">A: 0-28 days</string>
+    <string name="ad_a_desc">(Record all deaths between zero to 28 days of age) which occurred in the month</string>
+    <string name="ad_b">b: 29 days-11 months</string>
+    <string name="ad_b_desc">(Record all deaths between 29 days to 11 months of age) which occurred in the month</string>
+    <string name="ad_c">c: 12-59 months </string>
+    <string name="ad_c_desc">(Record all deaths between 12-59 months of age) which occurred in the month</string>
+    <string name="ad_d">d: Maternal </string>
+    <string name="ad_d_desc">(Record all deaths of women during pregnancy or child birth or within 42 days after delivery) which occurred in the month</string>
+    <string name="ad_e">e: Other deaths </string>
+    <string name="ad_e_desc">(Record all deaths in the household and not counted above) which occurred in the month</string>
+
+    <string name="others">Others</string>
+
+    <string name="ae_name">Remarks/other services provided</string>
+    <string name="ae_name_desc">Write any remark which you think is important for follow-up or any other services provided not recorded among the indicators</string>
+
+
+    <string name="household_info">Household Information</string>
+
+    <string name="af_name">Date of Data Collection (repeated from last page)</string>
+    <string name="af_name_desc">The date when the household member receives a service from a Community Health Volunteer  (recorded as DD/MM/YY) for example, 31/07/14</string>
+
+    <string name="ag_name">Village Name (repeated from last page)</string>
+    <string name="ag_name_desc">The name of the village where the household is located</string>
+
+    <string name="ah_name">Household Number</string>
+    <string name="ah_name_desc">This is a unique identification number, which is assigned to a household  during registration</string>
+
+    <string name="ai_name">Household  has a  functional latrine in use</string>
+    <string name="ai_name_desc">Observe and record with a tick (✔)  if the household  has a functional latrine in use or (X) if the household does not have a functional  latrine in use. This also includes all types of toilets and whether they are functional or not</string>
+
+    <string name="aj_name">Household with hand washing facilities</string>
+    <string name="aj_name_desc">Observe and record with a tick (✔)  if the  household has hand  washing  facilities (e.g.  hand wash basin, tippy tap, leaky  tin) or (X) if the  household does not have hand  washing  facilities</string>
+
+    <string name="ak_name">Household  using treated water</string>
+    <string name="ak_name_desc">Ask and record with a tick (✔) if the household is always using treated　water　for　drinking  or (X) if the household is not always using treated   water for drinking</string>
+
+
+    <string name="submit">Next</string>
+
+</resources>

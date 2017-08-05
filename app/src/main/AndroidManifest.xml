@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dewcis.mdss">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Network Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The following two permissions are not required to use
+	     Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <application
+        android:name="com.dewcis.mdss.MApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.dewcis.mdss.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dewcis.mdss.MainActivity"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="com.dewcis.mdss.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dewcis.mdss.Home" />
+        </activity>
+
+        <!--
+            <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="08dc57c432157eb5b3b3e219a8a30a63798cb86b" />
+        -->
+
+        <activity
+            android:name="com.dewcis.mdss.Home"
+            android:label="@string/title_activity_home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dewcis.mdss.Form100Activity"
+            android:label="@string/title_activity_form100"
+            android:parentActivityName="com.dewcis.mdss.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dewcis.mdss.Home" />
+        </activity>
+        <activity
+            android:name="com.dewcis.mdss.Form513Activity"
+            android:label="MOH 513"
+            android:parentActivityName="com.dewcis.mdss.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dewcis.mdss.Home" />
+        </activity>
+        <activity
+            android:name="com.dewcis.mdss.DangerSignsActivity"
+            android:parentActivityName="com.dewcis.mdss.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dewcis.mdss.Home" />
+        </activity>
+        <activity android:name="com.dewcis.mdss.DangerSignsBaby" />
+        <activity android:name="com.dewcis.mdss.MainActivityOr" />
+        <activity android:name="com.dewcis.mdss.DssActivity" />
+        <activity android:name="com.dewcis.mdss.SelectorActivity" />
+        <activity android:name="com.dewcis.mdss.DssActivityMother" />
+        <activity android:name="com.dewcis.mdss.RecommendationView" />
+        <activity android:name="com.dewcis.mdss.AlertsView" />
+        <activity android:name="com.dewcis.mdss.HouseHoldActivity" />
+        <activity android:name="com.dewcis.mdss.HouseholdMembersActivity"/>
+        <activity android:name="com.dewcis.mdss.model.DraftList"/>
+    </application>
+
+</manifest>

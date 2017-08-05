@@ -1,0 +1,364 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="none"
+    tools:context="com.dewcis.mdss.Form100Activity">
+
+    <LinearLayout
+        style="@style/linear_layout_vertical"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_dark"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:text="@string/section_a_100"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtformSerial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/form_serialOrPhone"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/primary" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtPatientID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/survey_id"
+            android:visibility="gone"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/primary" />
+
+        <LinearLayout
+            android:id="@+id/locations"
+            style="@style/linear_layout_vertical">
+
+            <TextView
+                style="@style/spinner_label"
+                android:contentDescription="@string/sub_location"
+                android:text="@string/sub_location" />
+
+            <Spinner
+                android:id="@+id/spnSublocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/spinner_label"
+                android:contentDescription="@string/village_name"
+                android:text="@string/village" />
+
+            <Spinner
+                android:id="@+id/spnVillage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtPatientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_of_patient"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/primary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/sex" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/age_in" />
+
+        <RadioGroup
+            android:id="@+id/rgAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_days"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/days" />
+
+            <RadioButton
+                android:id="@+id/radio_months"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/months" />
+
+            <RadioButton
+                android:id="@+id/radio_years"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/years" />
+        </RadioGroup>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtPatientAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/age"
+            android:inputType="numberDecimal"
+            android:maxLength="2"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/primary" />
+
+        <TextView
+            style="@style/spinner_label"
+            android:contentDescription="@string/status"
+            android:text="@string/status" />
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/categories"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_dark"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:text="@string/section_a_100_b"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/spinner_label"
+            android:contentDescription="@string/sub_location"
+            android:text="@string/sub_location" />
+
+        <Spinner
+            android:id="@+id/spnSublocation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/spinner_label"
+            android:contentDescription="@string/link_facility_name"
+            android:text="@string/link_facility_name" />
+
+        <Spinner
+            android:id="@+id/spnLinkFacility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/spinner_label"
+            android:contentDescription="@string/link_facility_name"
+            android:text="@string/referralFacility" />
+
+        <Spinner
+            android:id="@+id/spnReferralFacility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtReferralFacility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/referralFacility"
+            android:visibility="gone"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/primary" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtTreatment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/action_taken_referral"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/primary" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/txtComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/comments"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/primary" />
+
+        <TextView
+            style="@style/spinner_label"
+            android:contentDescription="@string/referral_services"
+            android:text="@string/referral_services" />
+
+        <LinearLayout
+            android:id="@+id/pregnant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/toStartANC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To start ANC" />
+
+            <CheckBox
+                android:id="@+id/followUpANC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Follow up ANC" />
+
+            <CheckBox
+                android:id="@+id/delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/postpartum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/postpartumFmPlanning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Postpartum family planning" />
+
+            <CheckBox
+                android:id="@+id/postpartumService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Postpartum service" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/newborn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/growthMonitoring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Growth monitoring for low weight at birth" />
+
+            <CheckBox
+                android:id="@+id/growthMonitoringOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Growth monitoring for normal weight at birth" />
+
+            <CheckBox
+                android:id="@+id/immunization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Immunization" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/other_members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/familyPlaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Family planning" />
+
+            <CheckBox
+                android:id="@+id/growthMonitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Growth monitoring" />
+
+            <CheckBox
+                android:id="@+id/immunize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Immunization"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/general_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General service" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/specific"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Specify reasons"
+            app:met_floatingLabel="normal"
+            app:met_floatingLabelTextColor="@color/primary" />
+
+        <Button
+            android:id="@+id/btnRefer"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/create_referral"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+

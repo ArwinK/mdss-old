@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="form_100_title">COMMUNITY REFERRAL FORM</string>
+    <string name="section_a_100">SECTION A: Patient / Client Data</string>
+    <string name="section_a_100_b">SECTION B: Hospital / Referral Data</string>
+    <string name="form_serial">Form Serial No.</string>
+    <string name="name_of_patient">Name of the Patient</string>
+    <string name="sex">Sex of patient</string>
+    <string name="age">Age of patient</string>
+    <string name="age_in">Age in: </string>
+    <string name="years">Years</string>
+    <string name="months">Months</string>
+    <string name="community_health_unit_name">Name of Community Health Unit</string>
+    <string name="link_facility_name">Facility linked to community unit</string>
+    <string name="reasons_for_referral">Reason(s) for Referral</string>
+    <string name="main_problems">Main Problems</string>
+    <string name="treatment_given">Treatment Given</string>
+    <string name="comments">Comments</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="receiving_officer">Receiving Officer</string>
+    <string name="name_of_receiving_officer">Name of Officer</string>
+    <string name="profession">Profession</string>
+    <string name="health_facility_name">Name of the Health Facility</string>
+    <string name="action_taken">Action Taken</string>
+
+
+
+    <string name="section_b_100">SECTION B : Referral Back to the community</string>
+    <string name="name_of_officer">Name of the officer</string>
+    <string name="chw_name">Name of CHW</string>
+    <string name="community_unit_name">Name of community unit</string>
+    <string name="mobile_no">Mobile No:</string>
+    <string name="call_made_by_referring_office">Call made by referring officer</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="do_to_patient">Kindly do the following to the patient</string>
+
+    <string name="create_referral">Create Referral</string>
+
+</resources>

@@ -1,0 +1,94 @@
+Applications Graphics Acceleration Info:
+Uptime: 171176609 Realtime: 331102557
+
+** Graphics info for pid 2225 [com.dewcis.mcdss] **
+
+Recent DisplayList operations
+    DrawRenderNode
+      DrawRenderNode
+        DrawRenderNode
+          DrawRenderNode
+            Save
+            ClipRect
+            DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+                DrawRenderNode
+                  DrawRenderNode
+                  DrawRenderNode
+                    DrawRenderNode
+                    DrawRenderNode
+                    DrawRenderNode
+                    DrawRenderNode
+                    DrawRenderNode
+                      DrawRect
+                      DrawText
+                      Save
+                      ClipRect
+                      Translate
+                      DrawPatch
+                      DrawRenderNode
+                        DrawText
+                      RestoreToCount
+                    DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+              DrawRenderNode
+            RestoreToCount
+        DrawRenderNode
+    RestoreToCount
+  DrawRenderNode
+  DrawRenderNode
+RestoreToCount
+DrawRect
+DrawRect
+DrawText
+DrawPatch
+DrawText
+DrawShadow
+DrawShadow
+
+Caches:
+Current memory usage / total memory usage (bytes):
+  TextureCache           318924 / 37748736
+  LayerCache                  0 / 25165824 (numLayers = 0)
+  Garbage layers              0
+  Active layers               0
+  RenderBufferCache           0 /  2097152
+  GradientCache               0 /   524288
+  PathCache               21543 / 10485760
+  TessellationCache       13392 /  1048576
+  TextDropShadowCache     56016 /  2097152
+  PatchCache               3776 /   131072
+  FontRenderer 0 A8      524288 /   524288
+  FontRenderer 0 RGBA         0 /        0
+  FontRenderer 0 total   524288 /   524288
+Other:
+  FboCache                    0 /        0
+Total memory usage:
+  937939 bytes, 0.89 MB
+
+Profile data in ms:
+
+	com.dewcis.mcdss/com.dewcis.mcdss.Home/android.view.ViewRootImpl@fb087df (visibility=8)
+	com.dewcis.mcdss/com.dewcis.mcdss.MainActivity/android.view.ViewRootImpl@2d09fc2c (visibility=0)
+View hierarchy:
+
+  com.dewcis.mcdss/com.dewcis.mcdss.Home/android.view.ViewRootImpl@fb087df
+  22 views, 17.53 kB of display lists
+
+  com.dewcis.mcdss/com.dewcis.mcdss.MainActivity/android.view.ViewRootImpl@2d09fc2c
+  192 views, 172.45 kB of display lists
+
+
+Total ViewRootImpl: 2
+Total Views:        214
+Total DisplayList:  189.98 kB
+

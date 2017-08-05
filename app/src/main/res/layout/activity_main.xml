@@ -1,0 +1,183 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.dewcis.mdss.MainActivity">
+
+    <LinearLayout style="@style/linear_layout_vertical" android:animateLayoutChanges="true">
+
+        <LinearLayout style="@style/linear_layout_vertical" android:id="@+id/survey">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblDisplayUser"
+            />
+
+        <TextView
+            android:text="@string/return_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblReturnTitle"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textColor="@color/primary_dark"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblReturnReason"
+            />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_of_hsehold_member"
+                app:met_floatingLabelTextColor="@color/primary"
+                app:met_floatingLabel="normal"
+                />
+
+        <!-- mother info-->
+        <LinearLayout style="@style/linear_layout_vertical" android:id="@+id/mother_info">
+            <com.dewcis.mdss.utils.ExpandablePanel
+                android:id="@+id/panelMotherInfo" style="@style/m_expandable_panel" app:animationDuration="500" app:collapsedHeight="0dip"  app:content="@+id/value" app:handle="@+id/expand" >
+                <LinearLayout style="@style/linear_layout_vertical" >
+                    <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/mother_info" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                    <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+
+                        <TextView android:text="@string/mothersAgeGroup" style="@style/spinner_label" android:contentDescription="@string/mothersAgeGroup"/>
+                        <Spinner android:id="@+id/spnAgeGroup" style="@style/age_spinner"></Spinner>
+
+                        <TextView android:text="@string/pregnant" style="@style/spinner_label" android:contentDescription="@string/pregnant_desc"/>
+                        <Spinner android:id="@+id/spnPregnant" style="@style/yes_no_na_spinner"></Spinner>
+
+                        <TextView android:text="@string/f_name" style="@style/spinner_label" android:contentDescription="@string/f_name_desc"/>
+                        <Spinner android:id="@+id/spnF" style="@style/yes_no_na_spinner"></Spinner>
+
+                        <TextView android:text="@string/g_name" style="@style/spinner_label" android:contentDescription="@string/g_name_desc"/>
+                        <Spinner android:id="@+id/spnG" style="@style/yes_no_na_spinner"></Spinner>
+
+                        <TextView android:text="@string/h_name" style="@style/spinner_label" android:contentDescription="@string/h_name_desc"/>
+                        <Spinner android:id="@+id/spnH" style="@style/yes_no_na_spinner"></Spinner>
+
+                        <TextView android:text="@string/i_name" style="@style/spinner_label" android:contentDescription="@string/i_name_desc"/>
+                        <Spinner android:id="@+id/spnI" style="@style/yes_no_na_spinner"></Spinner>
+
+                        <TextView android:text="@string/j_name" style="@style/spinner_label" android:contentDescription="@string/j_name_desc"/>
+                        <Spinner android:id="@+id/spnJ" style="@style/yes_no_na_spinner"></Spinner>
+
+                        <TextView android:text="@string/k_name" style="@style/spinner_label" android:contentDescription="@string/k_name_desc"/>
+                        <Spinner android:id="@+id/spnK" style="@style/yes_no_na_spinner"></Spinner>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.dewcis.mdss.utils.ExpandablePanel>
+        </LinearLayout>
+        <LinearLayout style="@style/linear_layout_vertical" android:id="@+id/child_info">
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelChildInfo" style="@style/m_expandable_panel" app:animationDuration="500" app:collapsedHeight="0dip"  app:content="@+id/value" app:handle="@+id/expand" >
+            <LinearLayout style="@style/linear_layout_vertical" >
+                <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/child_info" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+
+                    <TextView android:text="@string/gender" style="@style/spinner_label" android:contentDescription="@string/gender_desc"/>
+                    <Spinner android:id="@+id/spnChildGender" style="@style/yes_no_na_spinner" android:entries="@array/gender"></Spinner>
+
+                    <TextView android:text="@string/l_name" style="@style/spinner_label" android:contentDescription="@string/l_name_desc"/>
+                    <Spinner android:id="@+id/spnL" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/m_name" style="@style/spinner_label" android:contentDescription="@string/m_name_desc"/>
+                    <Spinner android:id="@+id/spnM" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/n_name" style="@style/spinner_label" android:contentDescription="@string/n_name_desc"/>
+                    <Spinner android:id="@+id/spnN" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/o_name" style="@style/spinner_label" android:contentDescription="@string/o_name_desc"/>
+                    <Spinner android:id="@+id/spnO" style="@style/yes_no_na_spinner"></Spinner>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+        </LinearLayout>
+
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelReferralsInfo" style="@style/m_expandable_panel" app:animationDuration="500" app:collapsedHeight="0dip"  app:content="@+id/value" app:handle="@+id/expand" >
+            <LinearLayout style="@style/linear_layout_vertical" >
+                <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/referrals_info" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+                    <TextView android:text="@string/p_name" style="@style/spinner_label" android:contentDescription="@string/p_name_desc"/>
+                    <Spinner android:id="@+id/spnP" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/q_name" style="@style/spinner_label" android:contentDescription="@string/q_name_desc"/>
+                    <Spinner android:id="@+id/spnQ" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/r_name" style="@style/spinner_label" android:contentDescription="@string/r_name_desc"/>
+                    <Spinner android:id="@+id/spnR" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/s_name" style="@style/spinner_label" android:contentDescription="@string/s_name_desc"/>
+                    <Spinner android:id="@+id/spnS" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/t_name" style="@style/spinner_label" android:contentDescription="@string/t_name_desc"/>
+                    <Spinner android:id="@+id/spnT" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/u_name" style="@style/spinner_label" android:contentDescription="@string/u_name_desc"/>
+                    <Spinner android:id="@+id/spnU" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/v_name" style="@style/spinner_label" android:contentDescription="@string/v_name_desc"/>
+                    <Spinner android:id="@+id/spnV" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/w_name" style="@style/spinner_label" android:contentDescription="@string/w_name_desc"/>
+                    <Spinner android:id="@+id/spnW" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/x_name" style="@style/spinner_label" android:contentDescription="@string/x_name_desc"/>
+                    <Spinner android:id="@+id/spnX" style="@style/yes_no_na_spinner"></Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelDefaultersInfo" style="@style/m_expandable_panel" app:animationDuration="500" app:collapsedHeight="0dip"  app:content="@+id/value" app:handle="@+id/expand" >
+            <LinearLayout style="@style/linear_layout_vertical" >
+                <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/defaulters_info" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+                    <TextView android:text="@string/z_name" style="@style/spinner_label" android:contentDescription="@string/z_name_desc"/>/>
+                    <Spinner android:id="@+id/spnZ" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/aa_name" style="@style/spinner_label" android:contentDescription="@string/aa_name_desc"/>/>
+                    <Spinner android:id="@+id/spnAA" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/ab_name" style="@style/spinner_label" android:contentDescription="@string/ab_name_desc"/>/>
+                    <Spinner android:id="@+id/spnAB" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/ac_name" style="@style/spinner_label" android:contentDescription="@string/ac_name_desc"/>/>
+                    <Spinner android:id="@+id/spnAC" style="@style/yes_no_na_spinner"></Spinner>
+
+                    <TextView android:text="@string/al_name" style="@style/spinner_label" android:contentDescription="@string/al_name_desc"/>/>
+                    <Spinner android:id="@+id/spnAL" style="@style/yes_no_na_spinner"></Spinner>
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="newClick"
+            android:text="@string/validate"/>
+    </LinearLayout>
+
+</ScrollView>

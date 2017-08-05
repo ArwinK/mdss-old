@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dewcis.mdss.DangerSignsBaby">
+
+    <LinearLayout style="@style/linear_layout_vertical" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout style="@style/linear_layout_vertical" android:id="@+id/radio_buttons">
+
+            <RadioGroup
+                android:id="@+id/atBirthOrSevenDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/atBirth"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/atBirth"/>
+                <RadioButton android:id="@+id/sevenDays"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seven28Days"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/atBirthPanel"
+           >
+            <TextView android:text="@string/atBirth" style="@style/spinner_label" android:contentDescription=""/>
+            <com.dewcis.mdss.utils.ExpandablePanel
+                android:id="@+id/panelSectionOne"
+                style="@style/m_expandable_panel"
+                app:animationDuration="500"
+                app:collapsedHeight="0dip"
+                app:content="@+id/value"
+                app:handle="@+id/expand" >
+
+                <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/section_one" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+
+                    <TextView android:text="@string/not_breathing" style="@style/spinner_label" android:contentDescription=""/>
+                    <Spinner android:id="@+id/not_breathing"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                    <TextView android:text="@string/yellow_skin" style="@style/spinner_label" android:contentDescription=""/>
+                    <Spinner android:id="@+id/yellow_skin"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                    <TextView android:text="@string/feet_blue" style="@style/spinner_label" android:contentDescription=""/>
+                    <Spinner android:id="@+id/feet_blue"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                    <TextView android:text="@string/not_sucking" style="@style/spinner_label" android:contentDescription=""/>
+                    <Spinner android:id="@+id/not_sucking"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                    <TextView android:text="@string/tiredness" style="@style/spinner_label" android:contentDescription=""/>
+                    <Spinner android:id="@+id/tiredness"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                    <TextView android:text="@string/always_sleepy" style="@style/spinner_label" android:contentDescription=""/>
+                    <Spinner android:id="@+id/always_sleepy"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                    <TextView android:text="@string/fast_breathing" style="@style/spinner_label" android:contentDescription=""/>
+                    <Spinner android:id="@+id/fast_breathing"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                    <TextView android:text="@string/chest_drawing" style="@style/spinner_label" android:contentDescription=""/>
+                    <Spinner android:id="@+id/chest_drawing"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                    <TextView android:text="@string/loosing_weight" style="@style/spinner_label" android:contentDescription=""/>
+                    <Spinner android:id="@+id/loose_weight"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                    <TextView android:text="@string/yellow_soles" style="@style/spinner_label" android:contentDescription=""/>
+                    <Spinner android:id="@+id/yellow_soles"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+                </LinearLayout>
+
+                <com.dewcis.mdss.utils.ExpandablePanel
+                    android:id="@+id/panelBreastfeedingHistory"
+                    style="@style/m_expandable_panel"
+                    app:animationDuration="500"
+                    app:collapsedHeight="0dip"
+                    app:content="@+id/value"
+                    app:handle="@+id/expand" >
+
+                    <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/breastfeeding" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+                    <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+
+                        <TextView android:text="@string/start_feeding" style="@style/spinner_label" android:contentDescription=""/>
+                        <Spinner android:id="@+id/start_feeding"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/start_feeding"></Spinner>
+
+                        <TextView android:text="@string/fed_birth" style="@style/spinner_label" android:contentDescription=""/>
+                        <Spinner android:id="@+id/fed_birth"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/fed_birth"></Spinner>
+
+                        <TextView android:text="@string/child_fed" style="@style/spinner_label" android:contentDescription=""/>
+                        <Spinner android:id="@+id/child_fed"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/fed_birth"></Spinner>
+                    </LinearLayout>
+                </com.dewcis.mdss.utils.ExpandablePanel>
+
+            </com.dewcis.mdss.utils.ExpandablePanel>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/atFirst28"
+        >
+
+        <TextView android:text="@string/first_seven_day" style="@style/spinner_label" android:contentDescription=""/>
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelSectionTwo"
+            style="@style/m_expandable_panel"
+            app:animationDuration="500"
+            app:collapsedHeight="0dip"
+            app:content="@+id/value"
+            app:handle="@+id/expand" >
+
+            <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/section_two" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+            <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+                <TextView android:text="@string/feet_blue" style="@style/spinner_label" android:contentDescription=""/>
+                <Spinner android:id="@+id/feet_blue_2"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/fever_chills" style="@style/spinner_label" android:contentDescription=""/>
+                <Spinner android:id="@+id/fever_chills"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/yellow_skin" style="@style/spinner_label" android:contentDescription=""/>
+                <Spinner android:id="@+id/yellow_skin_2"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/Breathing" style="@style/spinner_label" android:contentDescription=""/>
+                <Spinner android:id="@+id/breathing_difficulties"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelSectionThree"
+            style="@style/m_expandable_panel"
+            app:animationDuration="500"
+            app:collapsedHeight="0dip"
+            app:content="@+id/value"
+            app:handle="@+id/expand" >
+
+            <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/section_three" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+            <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" >
+                <TextView android:text="@string/convulsions" style="@style/spinner_label" android:contentDescription=""/>
+                <Spinner android:id="@+id/abdominal"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/not_suckingOrPoor" style="@style/spinner_label" android:contentDescription=""/>
+                <Spinner android:id="@+id/not_sucking_2"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/constipation" style="@style/spinner_label" android:contentDescription=""/>
+                <Spinner android:id="@+id/constipation"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/eye_discharge" style="@style/spinner_label" android:contentDescription=""/>
+                <Spinner android:id="@+id/urinate"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/cord_discharge" style="@style/spinner_label" android:contentDescription=""/>
+                <Spinner android:id="@+id/cord_discharge"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+            </LinearLayout>
+        </com.dewcis.mdss.utils.ExpandablePanel>
+    </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:onClick="nextForm"/>
+    </LinearLayout>
+
+</ScrollView>

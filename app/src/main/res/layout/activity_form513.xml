@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:scrollbars="none"
+tools:context="com.dewcis.mdss.Form513Activity">
+
+<LinearLayout style="@style/linear_layout_vertical" android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblDisplayUser"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <LinearLayout style="@style/linear_layout_vertical" android:id="@+id/secOne">
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/panelBackgroundIndicators"
+            style="@style/m_expandable_panel"
+            app:animationDuration="500"
+            app:collapsedHeight="0dip"
+            app:content="@+id/value"
+            app:handle="@+id/expand"
+            android:clickable="false">
+
+            <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/background_indicators" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+            <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" android:padding="5dp">
+                <TextView android:text="@string/sub_location" style="@style/spinner_label" android:contentDescription="@string/sub_location"/>
+                <Spinner android:id="@+id/spnSubLoc"  android:layout_width="match_parent" android:layout_height="24dp" android:entries="@array/single_select_value"></Spinner>
+
+                <TextView android:text="@string/village" style="@style/spinner_label" android:contentDescription="@string/village_name"/>
+                <Spinner android:id="@+id/spnVillage" android:layout_width="match_parent" android:paddingTop="10dp" android:layout_height="wrap_content" ></Spinner>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:paddingTop="10dp"
+                    android:id="@+id/txtPatientMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mobile_no"
+                    android:maxLength="10"
+                    android:inputType="numberDecimal"
+                    app:met_floatingLabelTextColor="@color/primary"
+                    app:met_floatingLabel="normal"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etHouseHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/houseHeadName"
+                    app:met_floatingLabelTextColor="@color/primary"
+                    app:met_floatingLabel="normal"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtNoOfMembers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/no_members"
+                    android:maxLength="10"
+                    android:inputType="numberDecimal"
+                    app:met_floatingLabelTextColor="@color/primary"
+                    app:met_floatingLabel="normal"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtNoDeaths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/no_deaths"
+                    android:maxLength="2"
+                    android:text="0"
+                    android:inputType="numberDecimal"
+                    app:met_floatingLabelTextColor="@color/primary"
+                    app:met_floatingLabel="normal"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Background Information"
+                    android:id="@+id/buttonBasic"
+                    android:onClick="saveDetails"
+                    android:paddingBottom="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+
+            </LinearLayout>
+
+
+        </com.dewcis.mdss.utils.ExpandablePanel>
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_layout_vertical" android:id="@+id/secTwo">
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/individual_indicators"
+            style="@style/m_expandable_panel"
+            app:animationDuration="500"
+            app:collapsedHeight="0dip"
+            app:content="@+id/value"
+            app:handle="@+id/expand"
+            android:clickable="false">
+
+            <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/individual_indicators" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+            <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" android:padding="5dp">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etFieldCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/form_code"
+                    app:met_floatingLabelTextColor="@color/primary"
+                    app:met_floatingLabel="normal"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/etFieldMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/full_name_member"
+                    app:met_floatingLabelTextColor="@color/primary"
+                    app:met_floatingLabel="normal"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/age_in_complete"
+                    android:layout_marginTop="8dp"/>
+
+                <RadioGroup
+                    android:id="@+id/ageValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/radio_days"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/days"/>
+                    <RadioButton android:id="@+id/radio_months"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/months"/>
+                    <RadioButton android:id="@+id/radio_years"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/years"/>
+                </RadioGroup>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/txtPatientAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/age_house"
+                    android:inputType="numberDecimal"
+                    app:met_floatingLabelTextColor="@color/primary"
+                    app:met_floatingLabel="normal"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sex"
+                    android:layout_marginTop="8dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rGender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/radio_male"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"/>
+                    <RadioButton android:id="@+id/radio_female"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"/>
+                </RadioGroup>
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:background="@color/primary_dark"-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:layout_marginBottom="3dp"-->
+                <!--android:padding="4dp"-->
+                <!--android:text="@string/section_b_513"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@color/white"/>-->
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/linear_layout_vertical" android:id="@+id/secThree" android:visibility="gone">
+
+                <TextView android:text="@string/ageCohort" style="@style/spinner_label" android:contentDescription="@string/r_toHHH"/>
+                <Spinner android:id="@+id/spnCohort"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/arr_cohort"></Spinner>
+
+                <TextView android:text="@string/link_member" style="@style/spinner_label" android:contentDescription="@string/r_toHHH"/>
+                <Spinner android:id="@+id/link_member"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/rel_list"></Spinner>
+
+                <TextView android:text="@string/extOrphan" style="@style/spinner_label" android:contentDescription="@string/r_orpan"/>
+                <Spinner android:id="@+id/spinner_orphan"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/extCertificate" style="@style/spinner_label" android:contentDescription="@string/r_birthCertificate"/>
+                <Spinner android:id="@+id/spinner_certificate"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/extSchool" style="@style/spinner_label" android:contentDescription="@string/r_school"/>
+                <Spinner android:id="@+id/spinner_school"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/extPregnant" style="@style/spinner_label" android:contentDescription="@string/r_pregnant"/>
+                <Spinner android:id="@+id/spinner_pregnant"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na" ></Spinner>
+
+                <TextView android:text="@string/extMotherChildHealth" style="@style/spinner_label" android:contentDescription="@string/r_booklet"/>
+                <Spinner android:id="@+id/spinner_motherChildHealth"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/extANC" style="@style/spinner_label" android:contentDescription="@string/r_anc"/>
+                <Spinner android:id="@+id/spinner_ANC"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/extSkilledBirthAT" style="@style/spinner_label" android:contentDescription="@string/r_attendant"/>
+                <Spinner android:id="@+id/spinner_skilledBirthAT"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/extExclusiveBreastFeeding" style="@style/spinner_label" android:contentDescription="@string/r_feeding"/>
+                <Spinner android:id="@+id/spinner_exclusiveBreastFeeding"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/usingPlanningMethods" style="@style/spinner_label" android:contentDescription="@string/r_planning"/>
+                <Spinner android:id="@+id/spinner_usingPlanning"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/family_planning"></Spinner>
+
+                <TextView android:text="@string/penta1Given" style="@style/spinner_label" android:contentDescription="@string/r_penta1"/>
+                <Spinner android:id="@+id/spinner_penta1Given"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/penta3Given" style="@style/spinner_label" android:contentDescription="@string/r_penta3"/>
+                <Spinner android:id="@+id/spinner_penta3Given"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/measlesGiven" style="@style/spinner_label" android:contentDescription="@string/r_measles"/>
+                <Spinner android:id="@+id/spinner_measlesGiven"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/fullyImmunized" style="@style/spinner_label" android:contentDescription="@string/r_immunized"/>
+                <Spinner android:id="@+id/spinner_fullyImmunized"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/vitaminAGiven" style="@style/spinner_label" android:contentDescription="@string/r_vitamin"/>
+                <Spinner android:id="@+id/spinner_vitaminAGiven"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/childrenThreeGroups" style="@style/spinner_label" android:contentDescription="@string/r_children"/>
+                <Spinner android:id="@+id/spinner_threeGroups"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/severelyMalnutritioned" style="@style/spinner_label" android:contentDescription="@string/r_malnourished"/>
+                <Spinner android:id="@+id/spinner_severelyMalnourished"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/moderatelyMalnourished" style="@style/spinner_label" android:contentDescription="@string/r_mMalnourished"/>
+                <Spinner android:id="@+id/spinner_moderatelyMalnourished"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/LLIN" style="@style/spinner_label" android:contentDescription="@string/r_llin"/>
+                <Spinner android:id="@+id/spinner_llin"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/knownChronic" style="@style/spinner_label" android:contentDescription="@string/r_illness"/>
+                <Spinner android:id="@+id/spinner_chronic"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/chronic"></Spinner>
+
+                <TextView android:text="@string/cough" style="@style/spinner_label" android:contentDescription="@string/r_cough"/>
+                <Spinner android:id="@+id/spinner_cough"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no_na"></Spinner>
+
+                <TextView android:text="@string/knowsHIVStatus" style="@style/spinner_label" android:contentDescription="@string/r_hiv"/>
+                <Spinner android:id="@+id/spinner_knownHIVStatus"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/disability" style="@style/spinner_label" android:contentDescription="@string/r_disability"/>
+                <Spinner android:id="@+id/spinner_disability"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/disability_list"></Spinner>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Survey"
+                    android:id="@+id/buttonIndividual"
+                    android:onClick="saveDetails"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </LinearLayout>
+
+
+        </com.dewcis.mdss.utils.ExpandablePanel>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_layout_vertical" android:id="@+id/secFour">
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/household_indicators"
+            style="@style/m_expandable_panel"
+            app:animationDuration="500"
+            app:collapsedHeight="0dip"
+            app:content="@+id/value"
+            app:handle="@+id/expand"
+            android:clickable="false">
+
+            <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/house_indicators" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+            <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" android:padding="5dp">
+
+                <TextView android:text="@string/safe_water" style="@style/spinner_label" android:contentDescription="@string/r_safeWater"/>
+                <Spinner android:id="@+id/safeWater"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/treated_water" style="@style/spinner_label" android:contentDescription="@string/r_treatedWater"/>
+                <Spinner android:id="@+id/treatedWater"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/washing_facilities" style="@style/spinner_label" android:contentDescription="@string/r_washingFacility"/>
+                <Spinner android:id="@+id/washingFacilities"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <TextView android:text="@string/disposal" style="@style/spinner_label" android:contentDescription="@string/r_latrineFunctional"/>
+                <Spinner android:id="@+id/disposal"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no" ></Spinner>
+
+                <TextView android:text="@string/disposalFacility" style="@style/spinner_label" android:contentDescription="@string/r_refuseDisposal"/>
+                <Spinner android:id="@+id/latrine"  android:layout_width="match_parent" android:layout_height="wrap_content" android:entries="@array/yes_no"></Spinner>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Survey"
+                    android:id="@+id/buttonHousehold"
+                    android:onClick="saveDetails"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </LinearLayout>
+
+
+
+        </com.dewcis.mdss.utils.ExpandablePanel>
+    </LinearLayout>
+
+    <LinearLayout style="@style/linear_layout_vertical" android:id="@+id/death513">
+        <com.dewcis.mdss.utils.ExpandablePanel
+            android:id="@+id/deathIndicators"
+            style="@style/m_expandable_panel"
+            app:animationDuration="500"
+            app:collapsedHeight="0dip"
+            app:content="@+id/value"
+            app:handle="@+id/expand"
+            android:clickable="false">
+
+            <TextView android:id="@id/expand" style="@style/section_header"  android:text="@string/deaths" android:drawableRight="@drawable/ic_expand_more_white_18dp"  />
+            <LinearLayout style="@style/linear_layout_vertical" android:id="@id/value" android:padding="4dp">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/date_death"
+                        android:layout_weight="1"
+                        android:hint="Date of Death" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp"
+                        android:src="@mipmap/ic_calendar"
+                        android:onClick="setDate"/>
+                </LinearLayout>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/individualCodeDt"
+                    android:layout_weight="1"
+                    android:hint="@string/individual_code" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameOfMemberDt"
+                    android:layout_weight="1"
+                    android:hint="@string/nameOfMember" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sex"
+                    android:layout_marginTop="8dp"/>
+
+                <RadioGroup
+                    android:id="@+id/genderValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/radio_maleDeath"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"/>
+                    <RadioButton android:id="@+id/radio_femaleDeath"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/age_in"
+                    android:layout_marginTop="8dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rgAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/radio_days_dt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/days"/>
+                    <RadioButton android:id="@+id/radio_months_dt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/months"/>
+                    <RadioButton android:id="@+id/radio_years_dt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/years"/>
+                </RadioGroup>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/age_dt"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/age_death" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/commentsDeath"
+                    android:layout_weight="1"
+                    android:lines="3"
+                    android:hint="@string/comment" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+
+            </LinearLayout>
+
+        </com.dewcis.mdss.utils.ExpandablePanel>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete survey"
+        android:id="@+id/button"
+        android:onClick="saveDetails"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</LinearLayout>
+
+</ScrollView>
+
